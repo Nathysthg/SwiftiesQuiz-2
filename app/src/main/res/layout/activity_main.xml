@@ -9,67 +9,65 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        android:background="white">
-
+        android:background="@color/snow">
 
     <TextView
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:text="Today is my first day at Blendex. I feel really _________  about it."
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
             android:gravity="center_horizontal"
-            android:text="What year was Taylor born?"
-            android:textColor="black"
-            android:textSize="30sp" />
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="20dp"/>
 
     <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="TextView"
-            android:textColor="black"
-            android:textSize="20sp" />
-
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:text="Select an Adjective!" />
 
     <LinearLayout
-
-            android:layout_width="280dp"
-            android:layout_height="431dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
         <Button
-                android:id="@+id/answer4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/blurrange"
-                android:padding="10dp" />
-
-        <Button
                 android:id="@+id/answer1"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/mist"
-                android:padding="10dp" />
-
-        <Button
-                android:id="@+id/answer3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/blurrange"
-                android:padding="10dp" />
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:text="Button" />
 
         <Button
                 android:id="@+id/answer2"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@color/leaves"
-                android:padding="10dp" />
+                android:textStyle="italic"
+                android:text="Button" />
+
+        <Button
+                android:id="@+id/answer3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Button" />
+
+        <Button
+                android:id="@+id/answer4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Button" />
     </LinearLayout>
-
-
 </LinearLayout>

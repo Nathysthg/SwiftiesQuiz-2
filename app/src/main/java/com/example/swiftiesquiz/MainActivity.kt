@@ -1,16 +1,13 @@
 package com.example.swiftiesquiz
 
 import android.content.DialogInterface
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Button
-import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
-
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -26,37 +23,37 @@ class MainActivity : AppCompatActivity() {
 
     //Start with an accessible map of questions
     val questionsMap = mapOf<Int, String>(
-        1 to "How many cats does Taylor have?",
-        2 to "When was Taylors album 1989 released?",
-        3 to "What is Taylors favorite color",
-        4 to "Which boy has Taylor NOT dated?",
-        5 to "What is Taylors middle name?",
-        6 to "What is Taylors favorite food?",
-        7 to "How tall is Taylor Swift?",
-        8 to "What is Taylors favorite book?"
+        1 to "Today is my first day at Blendex. I feel really _________  about it.",
+        2 to "I will meet new _________ there.",
+        3 to "I don’t know anything about my teacher but I think he/she is going to _________ me,",
+        4 to "because I am a/an  _________  person.",
+        5 to "I want to be his  _________." ,
+        6 to "After all, a new language is going to _________ me in the future.",
+        7 to "For example, I think English is  ________,",
+        8 to "but French is  ________."
     )
 
     val categoryMap = mapOf<Int, String>(
-        1 to "How many cats does Taylor have?",
-        2 to "When was Taylors album 1989 released?",
-        3 to "What is Taylors favorite color",
-        4 to "Which boy has Taylor NOT dated?",
-        5 to "What is Taylors middle name?",
-        6 to "What is Taylors favorite food?",
-        7 to "How tall is Taylor Swift?",
-        8 to "What is Taylors favorite book?"
+        1 to "Select an Adjective!",
+        2 to "Select a Plural noun!",
+        3 to "Select a Verb!",
+        4 to "Select an Adjective!",
+        5 to "Select a Singular noun!",
+        6 to "Select a Verb!",
+        7 to "Select an Adjective!",
+        8 to "Select an Adjective!"
     )
 
     //Also create a map with correlating answers to the questionsMap
     val answersMap = mapOf<Int, ArrayList<String>>(
-        1 to arrayListOf("1 Cat", "2 Cats", "No cats", "3 Cats"),
-        2 to arrayListOf("The year 2014", "The year 1987", "The year 2011", "The year 2018"),
-        3 to arrayListOf("Orange", "Purple", "Green", "Blue"),
-        4 to arrayListOf("Harry Styles", "John Mayer", "Calvin Harris", "James Bay"),
-        5 to arrayListOf("Jennifer", "Carly", "Alison", "Stephanie"),
-        6 to arrayListOf("Mac 'n Cheese", "Chicken Alfredo", "Blueberry Donuts", "Cheesecake"),
-        7 to arrayListOf("5'8", "6'0", "5'10", "5'5"),
-        8 to arrayListOf("The Maze Runner", "Of mice and men", "Life of pi", "To Kill a Mockingbird")
+        1 to arrayListOf("Help", "Friend", "Families","Crazy"),
+        2 to arrayListOf("Friends","Need", "World",  "Cool"),
+        3 to arrayListOf( "Pet","Kill", "Cats", "Amazing"),
+        4 to arrayListOf("Hate", "Problem", "Children","Important"),
+        5 to arrayListOf("Destroy",  "Animals","Question", "Special"),
+        6 to arrayListOf("World", "Friends", "Cool","Need"),
+        7 to arrayListOf("Hate", "Problem", "Amazing","Children"),
+        8 to arrayListOf("Destroy", "Special", "Question", "Animals")
 
 
     )
@@ -180,7 +177,7 @@ class MainActivity : AppCompatActivity() {
             8 -> {
                 Log.v(TAG, "Question 8")
 
-                if(buttonClicked == 4) {
+                if(buttonClicked == 2) {
 
                     AlertDialog.Builder (this)
                         .setTitle("Exercise Complete")
